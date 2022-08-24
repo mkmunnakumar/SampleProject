@@ -13,6 +13,10 @@ import com.sample.Sample_Project.repository.EmpRepo;
 public class EmpService {
 	@Autowired
 	private EmpRepo empRepo;
+
+	public Employee getEmployeeById(Integer eid){
+		return empRepo.findById(eid).orElse(null);
+	}
 	public List<Employee> retriveAllEmp(){
 
 		return empRepo.findAll();

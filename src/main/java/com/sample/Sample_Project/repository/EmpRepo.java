@@ -7,5 +7,6 @@ import com.sample.Sample_Project.entity.Employee;
 
 @Repository
 public interface EmpRepo extends JpaRepository<Employee, Integer> {
+    //boolean isEmployeeExistById(Integer eid);
 
 }
